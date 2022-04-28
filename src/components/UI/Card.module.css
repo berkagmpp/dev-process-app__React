@@ -1,6 +1,22 @@
 .card {
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    max-width: 90vw;
+    width: 100%;
+    margin: auto;
+    margin-top: -50rem;
+    position: relative;
+    background-color: #fff;
+    color: black;
     border-radius: 14px;
-    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 1px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 1.2rem;
 }
