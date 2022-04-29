@@ -1,0 +1,45 @@
+h2 {
+    font-size: 1.8rem;
+    margin: 0 0 2rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.bootstrap-table {
+    height: auto;
+    white-space: unset !important;
+}
+
+th, td {
+    white-space: unset !important;
+}
+
+th {
+    text-align: center !important;
+}
+
+td {
+    padding: 0.8rem !important;
+}

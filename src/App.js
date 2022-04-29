@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 
 import Header from "./components/Layout/Header";
-import Summary from "./components/Content/Summary";
 
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
     return (
         <Fragment>
             <Header />
-            <Summary />
         </Fragment>
     );
 }
