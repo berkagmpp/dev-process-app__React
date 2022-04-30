@@ -6,8 +6,6 @@ import Button from "../UI/Button";
 import classes from './Content.module.css'
 import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
-import { BootstrapTable, TableHeaderColumn,  } from 'react-bootstrap-table';
-
 import siteMap from '../../assets/sitemap.jpg'
 import wireframes from '../../assets/wireframes_g.jpg'
 

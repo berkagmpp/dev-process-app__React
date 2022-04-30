@@ -52,3 +52,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.strong {
+    font-weight: bold;
+}
+
+.small-italic {
+    font-size: 0.9rem;
+    font-style: italic;
+}

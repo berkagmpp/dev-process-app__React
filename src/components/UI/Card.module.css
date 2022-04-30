@@ -3,8 +3,9 @@
     max-width: 90vw;
     width: 100%;
     margin: auto;
-    margin-top: -22rem;
-    position: relative;
+    top: 13vh;
+    left: 5vw;
+    position: absolute;
     background-color: #fff;
     color: black;
     border-radius: 14px;

@@ -8,6 +8,7 @@ const HeaderButtons = props => {
             <Button onClick={props.onStakeClick}>Stakeholder &amp; Feasibility Study</Button>
             <Button onClick={props.onUxClick}>UX, Usability, Accessibility</Button>
             <Button onClick={props.onModellingClick}>Modelling Process</Button>
+            <Button onClick={props.onResponsiveClick}>The Responsive Design Case Study</Button>
         </Fragment>
     );
 };
