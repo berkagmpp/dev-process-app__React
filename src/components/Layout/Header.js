@@ -3,6 +3,7 @@ import React, { Fragment, useState } from "react";
 import HeaderButtons from "./HeaderButtons";
 import StakeholderContent from "../Content/StakeholderContent"
 import UxUsabilityContent from "../Content/UxUsabilityContent"
+import ModellingContent from "../Content/ModellingContent"
 import Summary from "../Content/Summary";
 
 import classes from './Header.module.css';
@@ -11,15 +12,24 @@ import lBanner from '../../assets/l-banner_2200x1117.jpg';
 const Header = props => {
     const [showStakeholder, setShowStakeholder] = useState(false);
     const [showUx, setShowUx] = useState(false);
+    const [showModelling, setShowModelling] = useState(false);
 
     const onStakeShowHandler = () => {
         setShowUx(false);
+        setShowModelling(false);
         setShowStakeholder(prevShowStakeholder => !prevShowStakeholder); // clean way to set oposit state
     };
 
     const onUxShowHandler = () => {
         setShowStakeholder(false);
+        setShowModelling(false);
         setShowUx(prevShowUx => !prevShowUx);
+    };
+
+    const onModellingShowHandler = () => {
+        setShowStakeholder(false);
+        setShowUx(false);
+        setShowModelling(prevShowModelling => !prevShowModelling);
     };
 
     return (
@@ -28,7 +38,7 @@ const Header = props => {
                 <div className={classes['main-header']}>
                     <h1>TheHaukai Project</h1>
                 </div>
-                <HeaderButtons onStakeClick={onStakeShowHandler} onUxClick={onUxShowHandler}/>
+                <HeaderButtons onStakeClick={onStakeShowHandler} onUxClick={onUxShowHandler} onModellingClick={onModellingShowHandler} />
             </header>
             <div className={classes['main-image']}>
                 <img src={lBanner} alt="The Haukai backgroung" />
@@ -36,6 +46,7 @@ const Header = props => {
             <Summary />
             { showStakeholder && <StakeholderContent show={showStakeholder} /> }
             { showUx && <UxUsabilityContent show={showUx} /> }
+            { showModelling && <ModellingContent show={showModelling} /> }
         </Fragment>
     );
 }

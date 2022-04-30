@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dev-process-app__React/static/css/main.7a0db4a0.css",
+    "main.js": "/dev-process-app__React/static/js/main.b9551014.js",
+    "static/media/wireframes_g.jpg": "/dev-process-app__React/static/media/wireframes_g.d243519f0866d9f43ff3.jpg",
+    "static/media/4.jpg": "/dev-process-app__React/static/media/4.c6f98dff668a852091b3.jpg",
+    "static/media/2.jpg": "/dev-process-app__React/static/media/2.de86e2398b52f67c15ad.jpg",
+    "static/media/3.jpg": "/dev-process-app__React/static/media/3.d340144f3d7637f0b20b.jpg",
+    "static/media/l-banner_2200x1117.jpg": "/dev-process-app__React/static/media/l-banner_2200x1117.bd4c152aa89218d50c89.jpg",
+    "static/media/5.jpg": "/dev-process-app__React/static/media/5.d0ce2907cbb348cd1fb5.jpg",
+    "static/media/1.jpg": "/dev-process-app__React/static/media/1.a9e0a683f5931798beb2.jpg",
+    "static/media/flowchart2.jpg": "/dev-process-app__React/static/media/flowchart2.2887e18f99d2ef5f52eb.jpg",
+    "static/media/flowchart1.jpg": "/dev-process-app__React/static/media/flowchart1.2aef5544f2b99f599966.jpg",
+    "static/media/sitemap.jpg": "/dev-process-app__React/static/media/sitemap.62c82a20ea778186671f.jpg",
+    "index.html": "/dev-process-app__React/index.html",
+    "main.7a0db4a0.css.map": "/dev-process-app__React/static/css/main.7a0db4a0.css.map",
+    "main.b9551014.js.map": "/dev-process-app__React/static/js/main.b9551014.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a0db4a0.css",
+    "static/js/main.b9551014.js"
+  ]
+}
