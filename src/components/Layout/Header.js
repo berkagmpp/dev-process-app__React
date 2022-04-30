@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 
 import HeaderButtons from "./HeaderButtons";
 import StakeholderContent from "../Content/StakeholderContent"
-import UxModellingContent from "../Content/UxModellingContent"
+import UxUsabilityContent from "../Content/UxUsabilityContent"
 import Summary from "../Content/Summary";
 
 import classes from './Header.module.css';
@@ -35,7 +35,7 @@ const Header = props => {
             </div>
             <Summary />
             { showStakeholder && <StakeholderContent show={showStakeholder} /> }
-            { showUx && <UxModellingContent show={showUx} /> }
+            { showUx && <UxUsabilityContent show={showUx} /> }
         </Fragment>
     );
 }
