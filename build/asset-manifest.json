@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/dev-process-app__React/static/css/main.7a0db4a0.css",
-    "main.js": "/dev-process-app__React/static/js/main.b9551014.js",
+    "main.css": "/dev-process-app__React/static/css/main.b04b8a54.css",
+    "main.js": "/dev-process-app__React/static/js/main.0d618e6c.js",
     "static/media/wireframes_g.jpg": "/dev-process-app__React/static/media/wireframes_g.d243519f0866d9f43ff3.jpg",
+    "static/media/nzherald_grid-with-media.jpg": "/dev-process-app__React/static/media/nzherald_grid-with-media.824568db0c22b96f6bcc.jpg",
     "static/media/4.jpg": "/dev-process-app__React/static/media/4.c6f98dff668a852091b3.jpg",
     "static/media/2.jpg": "/dev-process-app__React/static/media/2.de86e2398b52f67c15ad.jpg",
     "static/media/3.jpg": "/dev-process-app__React/static/media/3.d340144f3d7637f0b20b.jpg",
     "static/media/l-banner_2200x1117.jpg": "/dev-process-app__React/static/media/l-banner_2200x1117.bd4c152aa89218d50c89.jpg",
     "static/media/5.jpg": "/dev-process-app__React/static/media/5.d0ce2907cbb348cd1fb5.jpg",
     "static/media/1.jpg": "/dev-process-app__React/static/media/1.a9e0a683f5931798beb2.jpg",
+    "static/media/adobe_img.jpg": "/dev-process-app__React/static/media/adobe_img.5a8a7b90ada41de9f3b8.jpg",
+    "static/media/nzherald_img.jpg": "/dev-process-app__React/static/media/nzherald_img.4f131362a944d1fc61bd.jpg",
+    "static/media/adobe_img_700vs599.jpg": "/dev-process-app__React/static/media/adobe_img_700vs599.7e9b59617c5798a3ca2c.jpg",
+    "static/media/adobe_grid.jpg": "/dev-process-app__React/static/media/adobe_grid.c56e0522b95bddbe8db3.jpg",
     "static/media/flowchart2.jpg": "/dev-process-app__React/static/media/flowchart2.2887e18f99d2ef5f52eb.jpg",
     "static/media/flowchart1.jpg": "/dev-process-app__React/static/media/flowchart1.2aef5544f2b99f599966.jpg",
     "static/media/sitemap.jpg": "/dev-process-app__React/static/media/sitemap.62c82a20ea778186671f.jpg",
+    "static/media/adobe_query.jpg": "/dev-process-app__React/static/media/adobe_query.d64be5e09a0b36a7b66a.jpg",
+    "static/media/nzherald_query.jpg": "/dev-process-app__React/static/media/nzherald_query.748a9992accc407ddc33.jpg",
+    "static/media/The-content-area.jpg": "/dev-process-app__React/static/media/The-content-area.b549418e2557c2689946.jpg",
     "index.html": "/dev-process-app__React/index.html",
-    "main.7a0db4a0.css.map": "/dev-process-app__React/static/css/main.7a0db4a0.css.map",
-    "main.b9551014.js.map": "/dev-process-app__React/static/js/main.b9551014.js.map"
+    "main.b04b8a54.css.map": "/dev-process-app__React/static/css/main.b04b8a54.css.map",
+    "main.0d618e6c.js.map": "/dev-process-app__React/static/js/main.0d618e6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a0db4a0.css",
-    "static/js/main.b9551014.js"
+    "static/css/main.b04b8a54.css",
+    "static/js/main.0d618e6c.js"
   ]
 }

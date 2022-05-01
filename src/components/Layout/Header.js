@@ -48,7 +48,7 @@ const Header = props => {
         <Fragment>
             <header className={classes.header}>
                 <div className={classes['main-header']}>
-                    <a href="/index.html" >
+                    <a href="/">
                         <h1>TheHAUKAI PROJECT</h1>
                     </a>
                 </div>
