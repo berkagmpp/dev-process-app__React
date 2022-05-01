@@ -5,7 +5,6 @@ import StakeholderContent from "../Content/StakeholderContent"
 import UxUsabilityContent from "../Content/UxUsabilityContent"
 import ModellingContent from "../Content/ModellingContent"
 import ResponsiveContent from "../Content/ResponsiveContent";
-import Summary from "../Content/Summary";
 
 import classes from './Header.module.css';
 import lBanner from '../../assets/l-banner_2200x1117.jpg';
@@ -44,11 +43,12 @@ const Header = props => {
         setShowResponsive(prevShowResponsive => !prevShowResponsive);
     };
 
+
     return (
         <Fragment>
             <header className={classes.header}>
                 <div className={classes['main-header']}>
-                    <a href="/index.html">
+                    <a href="/index.html" >
                         <h1>TheHAUKAI PROJECT</h1>
                     </a>
                 </div>
@@ -60,7 +60,6 @@ const Header = props => {
             <div className={classes['main-image']}>
                 <img src={lBanner} alt="The Haukai backgroung" />
             </div>
-            <Summary />
             { showStakeholder && <StakeholderContent show={showStakeholder} /> }
             { showUx && <UxUsabilityContent show={showUx} /> }
             { showModelling && <ModellingContent show={showModelling} /> }
