@@ -48,7 +48,7 @@ const Header = props => {
         <Fragment>
             <header className={classes.header}>
                 <div className={classes['main-header']}>
-                    <a href="/">
+                    <a href="https://berkagmpp.github.io/dev-process-app__React/">
                         <h1>TheHAUKAI PROJECT</h1>
                     </a>
                 </div>
