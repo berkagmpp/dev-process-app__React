@@ -13,4 +13,4 @@ const Summary = props => {
     );
 };
 
-export default Summary;
+export default React.memo(Summary);

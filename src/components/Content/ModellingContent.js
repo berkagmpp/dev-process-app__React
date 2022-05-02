@@ -11,7 +11,6 @@ import wireframes from '../../assets/wireframes_g.jpg'
 
 
 const ModellingContent = props => {
-
     return (
         <Fragment>
             {props.show ? 

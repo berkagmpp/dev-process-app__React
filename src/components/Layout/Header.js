@@ -43,7 +43,6 @@ const Header = props => {
         setShowResponsive(prevShowResponsive => !prevShowResponsive);
     };
 
-
     return (
         <Fragment>
             <header className={classes.header}>
@@ -66,6 +65,6 @@ const Header = props => {
             { showResponsive && <ResponsiveContent show={showResponsive} /> }
         </Fragment>
     );
-}
+};
 
 export default Header;

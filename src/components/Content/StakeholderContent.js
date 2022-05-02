@@ -7,7 +7,6 @@ import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-a
 import { BootstrapTable, TableHeaderColumn,  } from 'react-bootstrap-table';
 
 const SkateholderContent = props => {
-
     const stakeholderData = [
         {   stakeholder: "Owners", 
             influence: "High", 

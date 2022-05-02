@@ -3,8 +3,6 @@ import React, { Fragment } from "react";
 import Card from '../UI/Card'
 
 import classes from './Content.module.css'
-import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
-import { BootstrapTable, TableHeaderColumn,  } from 'react-bootstrap-table';
 
 import nzheraldQuery from '../../assets/nzherald_query.jpg';
 import contentArea from '../../assets/The-content-area.jpg';
