@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-process-app__React/static/css/main.b04b8a54.css",
-    "main.js": "/dev-process-app__React/static/js/main.5fa5347a.js",
+    "main.js": "/dev-process-app__React/static/js/main.47e9a9f3.js",
     "static/media/wireframes_g.jpg": "/dev-process-app__React/static/media/wireframes_g.d243519f0866d9f43ff3.jpg",
     "static/media/nzherald_grid-with-media.jpg": "/dev-process-app__React/static/media/nzherald_grid-with-media.824568db0c22b96f6bcc.jpg",
     "static/media/4.jpg": "/dev-process-app__React/static/media/4.c6f98dff668a852091b3.jpg",
@@ -22,10 +22,10 @@
     "static/media/The-content-area.jpg": "/dev-process-app__React/static/media/The-content-area.b549418e2557c2689946.jpg",
     "index.html": "/dev-process-app__React/index.html",
     "main.b04b8a54.css.map": "/dev-process-app__React/static/css/main.b04b8a54.css.map",
-    "main.5fa5347a.js.map": "/dev-process-app__React/static/js/main.5fa5347a.js.map"
+    "main.47e9a9f3.js.map": "/dev-process-app__React/static/js/main.47e9a9f3.js.map"
   },
   "entrypoints": [
     "static/css/main.b04b8a54.css",
-    "static/js/main.5fa5347a.js"
+    "static/js/main.47e9a9f3.js"
   ]
 }
