@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 20vw auto;
     position: absolute;
     top:0;
 }

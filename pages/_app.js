@@ -1,14 +1,18 @@
+import { Fragment } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Layout from '../component/layout/Layout';
+import MainNavigation from '../component/layout/MainNavigation';
 
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
     return (
-        <Layout>
+        <Fragment>
+            <MainNavigation />
             <Component {...pageProps} />
-        </Layout>);
-}
+        </Fragment>
+    );
+};
 
-export default MyApp
+export default MyApp;

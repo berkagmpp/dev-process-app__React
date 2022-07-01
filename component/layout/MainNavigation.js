@@ -3,12 +3,13 @@ import Link from 'next/link';
 import classes from './MainNavigation.module.css';
 
 function MainNavigation() {
-
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>
-                <h1>TheHAUKAI PROJECT</h1>
-            </div>
+            <Link href='/'>
+                <div className={classes['logo-font']}>
+                    TheHAUKAI PROJECT
+                </div>
+            </Link>
             <nav>
                 <ul>
                     <li>

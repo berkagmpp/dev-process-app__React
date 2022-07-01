@@ -14,7 +14,16 @@
 }
 
 .logo {
-    font-size: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: bold;
+    padding: 20% 15%;
+}
+
+.logo-font {
+    font-size: 1.6rem;
+    line-height: 1;
     color: white;
     font-weight: bold;
     padding: 20% 15%;
