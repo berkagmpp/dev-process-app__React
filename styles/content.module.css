@@ -1,0 +1,27 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.bootstrap-table {
+    height: auto;
+    white-space: unset !important;
+}
+
+.img-shadow img {
+    box-shadow: 0 1px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.small-italic {
+    font-size: 0.9rem;
+    font-style: italic;
+}
