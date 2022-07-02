@@ -1,5 +1,3 @@
-import React, { Fragment } from "react";
-
 import Card from '../component/ui/Card'
 
 import classes from '../styles/content.module.css'
@@ -87,13 +85,6 @@ const Skateholder = () => {
         },
     ];
 
-    const consideration = <ul>
-        <li>"Normal table reservation"</li>
-        <li>Regular table reservations</li>
-        <li>Voucher purchasing</li>
-        <li>Responsive web</li>
-    </ul>;
-
     const criteriaData = [
         {
             items: "Functionality",
@@ -171,140 +162,137 @@ const Skateholder = () => {
     ];
 
     return (
-        <Fragment>
-            <Card>
-                <h2>Part 1. Stakeholder Interaction and Feasibility Study </h2>
-                <div>
-                    <h3> a) Requirements and Objectives</h3>
-                    <p className={classes.container}>The goals are to attract more customers and increase productivity for staff.<br />
-                        Possible features include:<br />
-                        • view the dinner and drinks menus online<br />
-                        • provide educational material about culture and kai<br />
-                        • audiovisual elements in the presentation<br />
-                        • be accessible for mobile devices<br />
-                        • provide information about bookings<br />
-                        • allow bookings to be submitted online<br />
-                        • allow purchase of gift vouchers online<br />
-                        • check if the restaurant is open or fully booked<br />
-                        • provide roster information for staff (in the future when more staff are hired)<br />
-                        • access details of traditional recipes<br />
-                        • find the location of the restaurant<br />
-                        • background information about the owners.</p>
-                </div><br />
-                <div>
-                    <h3> b) Stakeholder Analysis</h3>
-                    <div className={classes.container}>
-                        <BootstrapTable data={stakeholderData}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="stakeholder"
-                                width="12%" height="auto"> Stakeholder </TableHeaderColumn>
-                            <TableHeaderColumn dataField='influence'
-                                width="12%">Influence</TableHeaderColumn>
-                            <TableHeaderColumn dataField='influenced'
-                                width="12%">Influenced<br />by the results</TableHeaderColumn>
-                            <TableHeaderColumn dataField='interest'
-                                width="12%">Interest</TableHeaderColumn>
-                            <TableHeaderColumn dataField='analysis'
-                                width="52%" height="auto">Analysis</TableHeaderColumn>
-                        </BootstrapTable>
-                    </div>
-                    <br /><br /><br />
+        <Card>
+            <h2>Part 1. Stakeholder Interaction and Feasibility Study </h2>
+            <div>
+                <h3> a) Requirements and Objectives</h3>
+                <p className={classes.container}>The goals are to attract more customers and increase productivity for staff.<br />
+                    Possible features include:<br />
+                    • view the dinner and drinks menus online<br />
+                    • provide educational material about culture and kai<br />
+                    • audiovisual elements in the presentation<br />
+                    • be accessible for mobile devices<br />
+                    • provide information about bookings<br />
+                    • allow bookings to be submitted online<br />
+                    • allow purchase of gift vouchers online<br />
+                    • check if the restaurant is open or fully booked<br />
+                    • provide roster information for staff (in the future when more staff are hired)<br />
+                    • access details of traditional recipes<br />
+                    • find the location of the restaurant<br />
+                    • background information about the owners.</p>
+            </div><br />
+            <div>
+                <h3> b) Stakeholder Analysis</h3>
+                <div className={classes.container}>
+                    <BootstrapTable data={stakeholderData}
+                        className={classes['bootstrap-table']}>
+                        <TableHeaderColumn isKey
+                            dataField="stakeholder"
+                            width="12%" height="auto"> Stakeholder </TableHeaderColumn>
+                        <TableHeaderColumn dataField='influence'
+                            width="12%">Influence</TableHeaderColumn>
+                        <TableHeaderColumn dataField='influenced'
+                            width="12%">Influenced<br />by the results</TableHeaderColumn>
+                        <TableHeaderColumn dataField='interest'
+                            width="12%">Interest</TableHeaderColumn>
+                        <TableHeaderColumn dataField='analysis'
+                            width="52%" height="auto">Analysis</TableHeaderColumn>
+                    </BootstrapTable>
                 </div>
-                <div>
-                    <h3> c) Goals and Type of Requirements</h3>
-                    <h4>&nbsp;&nbsp;&nbsp; • SMART goals for the Haukai web application project<br /></h4><br />
-                    <div className={classes.container}>
-                        <h5>- Goal 1:</h5>
-                        <p>Create a web application that shows the menu by the 3rd of February 2022<br />
-                            and create an online reservation system to replace phone orders and reduce telephone labour wage of $20.20.</p>
-                        <BootstrapTable data={goal1Data}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField='specific'
-                                width="20%" height="auto">Specific</TableHeaderColumn>
-                            <TableHeaderColumn dataField='measurable'
-                                width="20%" height="auto">Measurable</TableHeaderColumn>
-                            <TableHeaderColumn dataField='achievable'
-                                width="20%" height="auto">Achievable</TableHeaderColumn>
-                            <TableHeaderColumn dataField='relevant'
-                                width="20%" height="auto">Relevant</TableHeaderColumn>
-                            <TableHeaderColumn dataField='timebound'
-                                width="20%" height="auto">Time-bound</TableHeaderColumn>
-                        </BootstrapTable>
-                    </div>
-                    <br /><br />
-                    <div className={classes.container}>
-                        <h5>• Goal 2:</h5>
-                        <p> In connection with local tourists companies, print posters and make web banners including QR codes and distribute for promoting the restaurant web applications. <br />
-                            The goal is to increase the valid direct traffic to the web application and increase the valid reservation by more than ten individual customers per day and keep it until the 31st of May 2022.
-                        </p>
-                        <BootstrapTable data={goal2Data}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField='specific'
-                                width="20%" height="auto">Specific</TableHeaderColumn>
-                            <TableHeaderColumn dataField='measurable'
-                                width="20%" height="auto">Measurable</TableHeaderColumn>
-                            <TableHeaderColumn dataField='achievable'
-                                width="20%" height="auto">Achievable</TableHeaderColumn>
-                            <TableHeaderColumn dataField='relevant'
-                                width="20%" height="auto">Relevant</TableHeaderColumn>
-                            <TableHeaderColumn dataField='timebound'
-                                width="20%" height="auto">Time-bound</TableHeaderColumn>
-                        </BootstrapTable>
-                    </div>
-                    <br /><br />
-                    <h4>&nbsp;&nbsp;&nbsp; • Types of Requirements for the Haukai web application project<br /></h4><br />
-                    <div className={classes.container}>
-                        <BootstrapTable data={requirementsData}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="number"
-                                width="10%" height="auto">No.</TableHeaderColumn>
-                            <TableHeaderColumn dataField="types"
-                                width="20%" height="auto">Types</TableHeaderColumn>
-                            <TableHeaderColumn dataField="requirements"
-                                width="70%" height="auto">Requirements</TableHeaderColumn>
-                        </BootstrapTable>
-                    </div>
-                    <br /><br /><br />
+                <br /><br /><br />
+            </div>
+            <div>
+                <h3> c) Goals and Type of Requirements</h3>
+                <h4>&nbsp;&nbsp;&nbsp; • SMART goals for the Haukai web application project<br /></h4><br />
+                <div className={classes.container}>
+                    <h5>- Goal 1:</h5>
+                    <p>Create a web application that shows the menu by the 3rd of February 2022<br />
+                        and create an online reservation system to replace phone orders and reduce telephone labour wage of $20.20.</p>
+                    <BootstrapTable data={goal1Data}
+                        className={classes['bootstrap-table']}>
+                        <TableHeaderColumn isKey
+                            dataField='specific'
+                            width="20%" height="auto">Specific</TableHeaderColumn>
+                        <TableHeaderColumn dataField='measurable'
+                            width="20%" height="auto">Measurable</TableHeaderColumn>
+                        <TableHeaderColumn dataField='achievable'
+                            width="20%" height="auto">Achievable</TableHeaderColumn>
+                        <TableHeaderColumn dataField='relevant'
+                            width="20%" height="auto">Relevant</TableHeaderColumn>
+                        <TableHeaderColumn dataField='timebound'
+                            width="20%" height="auto">Time-bound</TableHeaderColumn>
+                    </BootstrapTable>
                 </div>
-                <div>
-                    <h3> d) Feasibility Study</h3><br />
-                    <div className={classes.container}>
-                        <h4> • Project Description</h4>
-                        <p> Haukai Restaurant is an offline restaurant dedicated to exploring and developing Maori cooking technology and ingredients,
-                            playing a leading role in maintaining Maori food culture using New Zealand traditional ingredients and challenging new sophisticated expansion by the two owner chefs.
-                            This Restaurant is actively making reservations with the excellent evaluation of existing locals and tourist customers,
-                            but repeated reservations and information work occur due to phone and visit-oriented reservation patterns,
-                            resulting in lower work efficiency and satisfaction.
-                        </p>
-                        <p> Accordingly, a feasibility study is conducted to define goals, requirements, and development options for designing and building responsive websites and to acquaint recommendation options. </p>
-                        <p> The website focuses on providing convenience to users by enabling straightforward navigation of Haukai Restaurant's menus,
-                            supporting reservation functions and availability on any device.
-                            For this reason, Haukai Restaurant can expect additional promotional effects due to the influx of new customers visiting the site as well as the effect of reducing human costs.
-                        </p>
-                    </div>
-                    <br />
-                    <div className={classes.container}>
-                        <h4> • A List of Evaluation Criteria</h4>
-                        <BootstrapTable data={criteriaData}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="items"
-                                width="20%" height="auto">Items</TableHeaderColumn>
-                            <TableHeaderColumn dataField="considerations"
-                                width="60%" height="auto">Considerations</TableHeaderColumn>
-                            <TableHeaderColumn dataField="complexity"
-                                width="20%" height="auto">Complexity</TableHeaderColumn>
-                        </BootstrapTable>
-                    </div>
-                    <br />
+                <br /><br />
+                <div className={classes.container}>
+                    <h5>• Goal 2:</h5>
+                    <p> In connection with local tourists companies, print posters and make web banners including QR codes and distribute for promoting the restaurant web applications. <br />
+                        The goal is to increase the valid direct traffic to the web application and increase the valid reservation by more than ten individual customers per day and keep it until the 31st of May 2022.
+                    </p>
+                    <BootstrapTable data={goal2Data}
+                        className={classes['bootstrap-table']}>
+                        <TableHeaderColumn isKey
+                            dataField='specific'
+                            width="20%" height="auto">Specific</TableHeaderColumn>
+                        <TableHeaderColumn dataField='measurable'
+                            width="20%" height="auto">Measurable</TableHeaderColumn>
+                        <TableHeaderColumn dataField='achievable'
+                            width="20%" height="auto">Achievable</TableHeaderColumn>
+                        <TableHeaderColumn dataField='relevant'
+                            width="20%" height="auto">Relevant</TableHeaderColumn>
+                        <TableHeaderColumn dataField='timebound'
+                            width="20%" height="auto">Time-bound</TableHeaderColumn>
+                    </BootstrapTable>
                 </div>
-
-            </Card>
-        </Fragment>
+                <br /><br />
+                <h4>&nbsp;&nbsp;&nbsp; • Types of Requirements for the Haukai web application project<br /></h4><br />
+                <div className={classes.container}>
+                    <BootstrapTable data={requirementsData}
+                        className={classes['bootstrap-table']}>
+                        <TableHeaderColumn isKey
+                            dataField="number"
+                            width="10%" height="auto">No.</TableHeaderColumn>
+                        <TableHeaderColumn dataField="types"
+                            width="20%" height="auto">Types</TableHeaderColumn>
+                        <TableHeaderColumn dataField="requirements"
+                            width="70%" height="auto">Requirements</TableHeaderColumn>
+                    </BootstrapTable>
+                </div>
+                <br /><br /><br />
+            </div>
+            <div>
+                <h3> d) Feasibility Study</h3><br />
+                <div className={classes.container}>
+                    <h4> • Project Description</h4>
+                    <p> Haukai Restaurant is an offline restaurant dedicated to exploring and developing Maori cooking technology and ingredients,
+                        playing a leading role in maintaining Maori food culture using New Zealand traditional ingredients and challenging new sophisticated expansion by the two owner chefs.
+                        This Restaurant is actively making reservations with the excellent evaluation of existing locals and tourist customers,
+                        but repeated reservations and information work occur due to phone and visit-oriented reservation patterns,
+                        resulting in lower work efficiency and satisfaction.
+                    </p>
+                    <p> Accordingly, a feasibility study is conducted to define goals, requirements, and development options for designing and building responsive websites and to acquaint recommendation options. </p>
+                    <p> The website focuses on providing convenience to users by enabling straightforward navigation of Haukai Restaurant's menus,
+                        supporting reservation functions and availability on any device.
+                        For this reason, Haukai Restaurant can expect additional promotional effects due to the influx of new customers visiting the site as well as the effect of reducing human costs.
+                    </p>
+                </div>
+                <br />
+                <div className={classes.container}>
+                    <h4> • A List of Evaluation Criteria</h4>
+                    <BootstrapTable data={criteriaData}
+                        className={classes['bootstrap-table']}>
+                        <TableHeaderColumn isKey
+                            dataField="items"
+                            width="20%" height="auto">Items</TableHeaderColumn>
+                        <TableHeaderColumn dataField="considerations"
+                            width="60%" height="auto">Considerations</TableHeaderColumn>
+                        <TableHeaderColumn dataField="complexity"
+                            width="20%" height="auto">Complexity</TableHeaderColumn>
+                    </BootstrapTable>
+                </div>
+                <br />
+            </div>
+        </Card>
     );
 };
 
