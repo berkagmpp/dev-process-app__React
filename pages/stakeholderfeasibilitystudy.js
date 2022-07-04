@@ -216,26 +216,18 @@ const Skateholder = () => {
                                     <TableCell align="center" component="th" width="20%" key="specific">Specific</TableCell>
                                     <TableCell align='left' component="td" key="specificCell">{goal1Data.specific}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="measurable">Measurable</TableCell>
                                     <TableCell align='left' component="td" key="measurableCell">{goal1Data.measurable}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="achievable">Achievable</TableCell>
                                     <TableCell align='left' component="td" key="achievableCell">{goal1Data.achievable}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="relevant">Relevant</TableCell>
                                     <TableCell align='left' component="td" key="relevantCell">{goal1Data.relevant}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="timebound">Time-bound</TableCell>
                                     <TableCell align='left' component="td" key="timeboundCell">{goal1Data.timebound}</TableCell>
@@ -257,26 +249,18 @@ const Skateholder = () => {
                                     <TableCell align="center" component="th" width="20%" key="specific2">Specific</TableCell>
                                     <TableCell align='left' component="td" key="specificCell2">{goal2Data.specific}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="measurable2">Measurable</TableCell>
                                     <TableCell align='left' component="td" key="measurableCell2">{goal2Data.measurable}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="achievable2">Achievable</TableCell>
                                     <TableCell align='left' component="td" key="achievableCell2">{goal2Data.achievable}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="relevant2">Relevant</TableCell>
                                     <TableCell align='left' component="td" key="relevantCell2">{goal2Data.relevant}</TableCell>
                                 </TableRow>
-                            </TableBody>
-                            <TableBody>
                                 <TableRow>
                                     <TableCell align="center" component="th" key="timebound2">Time-bound</TableCell>
                                     <TableCell align='left' component="td" key="timeboundCell2">{goal2Data.timebound}</TableCell>

@@ -1,8 +1,16 @@
 import Card from '../component/ui/Card'
 
 import classes from '../styles/content.module.css'
-import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
-import { BootstrapTable, TableHeaderColumn, } from 'react-bootstrap-table';
+
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Paper,
+} from "@material-ui/core";
 
 import persona1 from '../public/assets/1.jpg';
 import persona2 from '../public/assets/2.jpg';
@@ -35,6 +43,15 @@ const UxUsabilityAccessibility = props => {
             persona: "He will spend about 10 minutes this evening checking Haukai Restaurant's dinner menu on his desktop and booking a table for the weekend on his mobile. Also, He is thinking of his visit review on Facebook after using the restaurant.",
         },
     ];
+    
+    const persona2Lists = persona2Data.map((item, i) => {
+        return (
+            <TableRow key={i}>
+                <TableCell align="center" width="20%" key={`user1 + ${i}`}>{item.user}</TableCell>
+                <TableCell align="left" width="80%" key={`persona2 + ${i}`}>{item.persona}</TableCell>
+            </TableRow>
+        );
+    });
 
     const persona5Data = [
         {
@@ -59,6 +76,15 @@ const UxUsabilityAccessibility = props => {
         },
     ];
 
+    const persona5Lists = persona5Data.map((item, i) => {
+        return (
+            <TableRow key={i}>
+                <TableCell align="center" width="20%" key={`user2 + ${i}`}>{item.user}</TableCell>
+                <TableCell align="left" width="80%" key={`persona5 + ${i}`}>{item.persona}</TableCell>
+            </TableRow>
+        );
+    });
+
     const sn1Case1Data = [
         {
             usecase: "Actor",
@@ -73,6 +99,15 @@ const UxUsabilityAccessibility = props => {
             action: "He checks the menu provided on the menu page.",
         },
     ];
+
+    const sn1Case1Lists = sn1Case1Data.map((item, i) => {
+        return (
+            <TableRow key={i}>
+                <TableCell align="center" width="20%" key={`usecase1 + ${i}`}>{item.usecase}</TableCell>
+                <TableCell align="center" width="80%" key={`action1 + ${i}`}>{item.action}</TableCell>
+            </TableRow>
+        );
+    });
 
     const sn1Case2Data = [
         {
@@ -113,6 +148,15 @@ const UxUsabilityAccessibility = props => {
         },
     ];
 
+    const sn1Case2Lists = sn1Case2Data.map((item, i) => {
+        return (
+            <TableRow key={i}>
+                <TableCell align="center" width="20%" key={`usecase2 + ${i}`}>{item.usecase}</TableCell>
+                <TableCell align="center" width="80%" key={`action2 + ${i}`}>{item.action}</TableCell>
+            </TableRow>
+        );
+    });
+
     const sn2Case1Data = [
         {
             usecase: "Actor",
@@ -132,6 +176,15 @@ const UxUsabilityAccessibility = props => {
         },
     ];
 
+    const sn2Case1Lists = sn2Case1Data.map((item, i) => {
+        return (
+            <TableRow key={i}>
+                <TableCell align="center" width="20%" key={`usecase3 + ${i}`}>{item.usecase}</TableCell>
+                <TableCell align="center" width="80%" key={`action3 + ${i}`}>{item.action}</TableCell>
+            </TableRow>
+        );
+    });
+    
     const sn2Case2Data = [
         {
             usecase: "Actor",
@@ -171,6 +224,15 @@ const UxUsabilityAccessibility = props => {
         },
     ];
 
+    const sn2Case2Lists = sn2Case2Data.map((item, i) => {
+        return (
+            <TableRow key={i}>
+                <TableCell align="center" width="20%" key={`usecase4 + ${i}`}>{item.usecase}</TableCell>
+                <TableCell align="center" width="80%" key={`action4 + ${i}`}>{item.action}</TableCell>
+            </TableRow>
+        );
+    });
+
     return (
         <Card>
             <h2>Part 2. User Experience, Usability, Accessibility </h2>
@@ -201,23 +263,44 @@ const UxUsabilityAccessibility = props => {
                 <br />
                 <div className={classes.container}>
                     <h4> • Scenarios 1</h4>
-                    <BootstrapTable data={persona2Data}
-                        className={classes['bootstrap-table']}>
-                        <TableHeaderColumn isKey
-                            dataField="user"
-                            width="15%" height="auto">User</TableHeaderColumn>
-                        <TableHeaderColumn dataField="persona"
-                            width="85%" height="auto">Persona 2 - Reon Park (Tourists group)</TableHeaderColumn>
-                    </BootstrapTable><br /><br />
+                    <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Scenarios 1 table">
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" width="20%" key="user1">
+                                            <div className={classes.strong}>User</div>
+                                        </TableCell>
+                                        <TableCell align="left" width="80%" key="persona2">
+                                            <div className={classes.strong}>Persona 2 - Reon Park (Tourists group)</div>
+                                        </TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {persona2Lists}
+                                </TableBody>
+                            </Table>
+                    </TableContainer>
+                </div>
+                <br /><br />
+                <div className={classes.container}>
                     <h4> • Scenarios 2</h4>
-                    <BootstrapTable data={persona5Data}
-                        className={classes['bootstrap-table']}>
-                        <TableHeaderColumn isKey
-                            dataField="user"
-                            width="15%" height="auto">User</TableHeaderColumn>
-                        <TableHeaderColumn dataField="persona"
-                            width="85%" height="auto">Persona 5 - Emma Watt (Locals group, a staff of tour company)</TableHeaderColumn>
-                    </BootstrapTable>
+                    <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Scenarios 2 table">
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" width="20%" key="user2">
+                                            <div className={classes.strong}>User</div>
+                                        </TableCell>
+                                        <TableCell align="left" width="80%" key="persona5">
+                                            <div className={classes.strong}>Persona 5 - Emma Watt (Locals group, a staff of tour company)</div>
+                                        </TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {persona5Lists}
+                                </TableBody>
+                            </Table>
+                    </TableContainer>
                 </div>
             </div>
             <br /><br /><br />
@@ -227,47 +310,75 @@ const UxUsabilityAccessibility = props => {
                 <div className={classes.container}>
                     <h4> • Scenario 1 Use Cases Description</h4><br />
                     <div className={classes.container}>
-                        <BootstrapTable data={sn1Case1Data}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="usecase"
-                                width="15%" height="auto">Use case 1</TableHeaderColumn>
-                            <TableHeaderColumn dataField="action"
-                                width="85%" height="auto">Check the menu</TableHeaderColumn>
-                        </BootstrapTable>
+                        <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Scenario 1 Use Cases 1 Description table">
+                                <TableBody>
+                                    <TableRow>
+                                        <TableCell align="center" component="th" width="20%" key="usecase1">
+                                            <div className={classes.strong}>Use case 1</div>
+                                        </TableCell>
+                                        <TableCell align="center" component="th" width="80%" key="checkthemenu">
+                                            <div className={classes.strong}>Check the menu</div>
+                                        </TableCell>
+                                    </TableRow>
+                                    { sn1Case1Lists }
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div><br /><br /><br />
                     <div className={classes.container}>
-                        <BootstrapTable data={sn1Case2Data}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="usecase"
-                                width="15%" height="auto">Use case 2</TableHeaderColumn>
-                            <TableHeaderColumn dataField="action"
-                                width="85%" height="auto">Book the table</TableHeaderColumn>
-                        </BootstrapTable>
+                        <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Scenario 1 Use Cases 2 Description table">
+                                <TableBody>
+                                    <TableRow>
+                                        <TableCell align="center" component="th" width="20%" key="usecase2">
+                                            <div className={classes.strong}>Use case 2</div>
+                                        </TableCell>
+                                        <TableCell align="center" component="th" width="80%" key="bookthetable">
+                                            <div className={classes.strong}>Book the table</div>
+                                        </TableCell>
+                                    </TableRow>
+                                    { sn1Case2Lists }
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div>
                 </div><br /><br />
                 <div className={classes.container}>
                     <h4> • Scenario 2 Use Cases Description</h4><br />
                     <div className={classes.container}>
-                        <BootstrapTable data={sn2Case1Data}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="usecase"
-                                width="15%" height="auto">Use case 3</TableHeaderColumn>
-                            <TableHeaderColumn dataField="action"
-                                width="85%" height="auto">View content</TableHeaderColumn>
-                        </BootstrapTable>
+                        <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Scenario 2 Use Cases 3 Description table">
+                                <TableBody>
+                                    <TableRow>
+                                        <TableCell align="center" component="th" width="20%" key="usecase3">
+                                            <div className={classes.strong}>Use case 3</div>
+                                        </TableCell>
+                                        <TableCell align="center" component="th" width="80%" key="viewcontent">
+                                            <div className={classes.strong}>View content</div>
+                                        </TableCell>
+                                    </TableRow>
+                                    { sn2Case1Lists }
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div><br /><br /><br />
                     <div className={classes.container}>
-                        <BootstrapTable data={sn2Case2Data}
-                            className={classes['bootstrap-table']}>
-                            <TableHeaderColumn isKey
-                                dataField="usecase"
-                                width="15%" height="auto">Use case 4</TableHeaderColumn>
-                            <TableHeaderColumn dataField="action"
-                                width="85%" height="auto">Purchase gift vouchers</TableHeaderColumn>
-                        </BootstrapTable>
+                        <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Scenario 2 Use Cases 4 Description table">
+                                <TableBody>
+                                    <TableRow>
+                                        <TableCell align="center" component="th" width="20%" key="usecase5">
+                                            <div className={classes.strong}>Use case 5</div>
+                                        </TableCell>
+                                        <TableCell align="center" component="th" width="80%" key="purchasegiftvouchers">
+                                            <div className={classes.strong}>Purchase gift vouchers</div>
+                                        </TableCell>
+                                    </TableRow>
+                                    { sn2Case2Lists }
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div>
                 </div><br /><br /><br />
                 <div className={classes.container}>
