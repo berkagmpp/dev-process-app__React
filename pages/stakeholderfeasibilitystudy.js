@@ -288,21 +288,21 @@ const Skateholder = () => {
                 <br /><br />
                 <h4>&nbsp;&nbsp;&nbsp; • Types of Requirements for the Haukai web application project<br /></h4><br />
                 <div className={classes.container}>
+                    <TableContainer component={Paper}>
+                            <Table size="small" aria-label="Types of Requirements table">
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell align="center" width="10%" key="no">No.</TableCell>
+                                        <TableCell align="center" width="20%" key="types">Types</TableCell>
+                                        <TableCell align="center" width="70%" key="requirements">Requirements</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {requirementsLists}
+                                </TableBody>
+                            </Table>
+                    </TableContainer>
                 </div>
-                <TableContainer component={Paper}>
-                        <Table size="small" aria-label="Types of Requirements table">
-                            <TableHead>
-                                <TableRow>
-                                    <TableCell align="center" width="10%" key="no">No.</TableCell>
-                                    <TableCell align="center" width="20%" key="types">Types</TableCell>
-                                    <TableCell align="center" width="70%" key="requirements">Requirements</TableCell>
-                                </TableRow>
-                            </TableHead>
-                            <TableBody>
-                                {requirementsLists}
-                            </TableBody>
-                        </Table>
-                </TableContainer>
                 <br /><br /><br />
             </div>
             <div>
