@@ -12,6 +12,8 @@ import {
     Paper,
 } from "@material-ui/core";
 
+import Image from 'next/image';
+
 import persona1 from '../public/assets/1.jpg';
 import persona2 from '../public/assets/2.jpg';
 import persona3 from '../public/assets/3.jpg';
@@ -239,21 +241,23 @@ const UxUsabilityAccessibility = props => {
             <div>
                 <h3> a) Personas</h3>
                 <br />
-                <div className={classes.center}>
-                    <div className={classes['img-shadow']}>
-                        <img src={persona1} alt="Persona one" />
-                    </div><br />
-                    <div className={classes['img-shadow']}>
-                        <img src={persona2} alt="Persona twe" />
-                    </div><br />
-                    <div className={classes['img-shadow']}>
-                        <img src={persona3} alt="Persona three" />
-                    </div><br />
-                    <div className={classes['img-shadow']}>
-                        <img src={persona4} alt="Persona four" />
-                    </div><br />
-                    <div className={classes['img-shadow']}>
-                        <img src={persona5} alt="Persona five" />
+                <div className={classes.container}>
+                    <div className={classes.center}>
+                        <div className={classes['img-shadow']}>
+                            <Image src={persona1} alt="Persona one" width={839} height={980} placeholder="blur" />
+                        </div><br /><br />
+                        <div className={classes['img-shadow']}>
+                            <Image src={persona2} alt="Persona twe" width={839} height={1004} placeholder="blur"/>
+                        </div><br /><br />
+                        <div className={classes['img-shadow']}>
+                            <Image src={persona3} alt="Persona three" width={839} height={980} placeholder="blur" />
+                        </div><br /><br />
+                        <div className={classes['img-shadow']}>
+                            <Image src={persona4} alt="Persona four" width={839} height={1054} placeholder="blur" />
+                        </div><br /><br />
+                        <div className={classes['img-shadow']}>
+                            <Image src={persona5} alt="Persona five" width={839} height={980} placeholder="blur" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -384,13 +388,12 @@ const UxUsabilityAccessibility = props => {
                 <div className={classes.container}>
                     <h4> • Use Cases 1 and 2 Flow Chart</h4>
                     <div className={classes.center}>
-                        <img src={flowchart1} alt="Flow chart one" />
+                        <Image src={flowchart1} alt="Flow chart one" />
                     </div><br /><br /><br />
                     <h4> • Use Cases 3 and 4 Flow Chart</h4>
                     <div className={classes.center}>
-                        <img src={flowchart2} alt="Flow chart two" />
+                        <Image src={flowchart2} alt="Flow chart two" />
                     </div><br /><br />
-
                 </div>
             </div>
         </Card>
