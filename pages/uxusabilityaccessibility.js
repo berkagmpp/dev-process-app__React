@@ -22,7 +22,7 @@ import persona5 from '../public/assets/5.jpg';
 import flowchart1 from '../public/assets/flowchart1.jpg';
 import flowchart2 from '../public/assets/flowchart2.jpg';
 
-const UxUsabilityAccessibility = props => {
+const UxUsabilityAccessibility = () => {
     const persona2Data = [
         {
             user: "Background 1",
