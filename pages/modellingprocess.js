@@ -24,7 +24,7 @@ const ModellingProcess = () => {
                     <Image src={wireframes} alt="Wireframes"/>
                 </div>
                 <div className={classes.center}>
-                    <a target="_blank" href="https://drive.google.com/file/d/1F8ZNsNUAkankznEczO8YJMCqcByYd5es/view?usp=sharing">
+                    <a target="_blank" rel="noreferrer noopener" href="https://drive.google.com/file/d/1F8ZNsNUAkankznEczO8YJMCqcByYd5es/view?usp=sharing">
                         <Button>View Details</Button></a>
                 </div> 
                 <br /><br /><br />

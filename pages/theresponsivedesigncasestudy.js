@@ -38,10 +38,10 @@ const TheResponsiveDesignCaseStudy = () => {
                     </p><br />
                     <div className={classes.center}>
                         <div className={classes['img-shadow']}>
-                            <Image src={nzheraldQuery} alt="NZherald's empty space shown on a widescreen (3840px)" /><br /><br />
+                            <Image src={nzheraldQuery} alt="NZherald&#39;s empty space shown on a widescreen (3840px)" /><br /><br />
                         </div><br />
                         <p className={classes.strong}>Figure 1</p>
-                        <p>NZherald's empty space shown on a widescreen (3840px)</p>
+                        <p>NZherald&#39;s empty space shown on a widescreen (3840px)</p>
                     </div><br />
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         NZherald (https://www.nzherald.co.nz/) sets three max-width breakpoints:
@@ -101,7 +101,7 @@ const TheResponsiveDesignCaseStudy = () => {
                     </div>
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         As shown in Figure 4, NZherald configures CSS for the responsive web using
-                        the general 'display: grid' method parallel with media queries.
+                        the general &#39;display: grid&#39; method parallel with media queries.
                         Most latest browsers support it and match the simple and effective two-dimensional layouts composition.
                     </p><br />
                     <div className={classes.center}>
@@ -125,10 +125,10 @@ const TheResponsiveDesignCaseStudy = () => {
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         4K monitors require larger font size and slightly different structures or layout, but on the other hand,
                         the mobile device may not have the same text size as the 4K monitor.
-                        In order to apply all of these fluid resolutions, the required font size can be set to 'px'(pixels)
-                        one by one through media queries or set to 'vw'(1% of viewport width) units.
+                        In order to apply all of these fluid resolutions, the required font size can be set to &#39;px&#39;(pixels)
+                        one by one through media queries or set to &#39;vw&#39;(1% of viewport width) units.
                         In certain situations, such as mobile or large screens over 1600px,
-                        specifying the font size using 'em' and 'rem' in media queries is the most basic
+                        specifying the font size using &#39;em&#39; and &#39;rem&#39; in media queries is the most basic
                         and most commonly used technique (Lännenmäki, 2021).
                     </p>
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -182,7 +182,7 @@ const TheResponsiveDesignCaseStudy = () => {
                         However, by keeping the heading simple and clean, it is suitable for minimal design implementation,
                         and by removing the search display, it is essentially advantageous to minimise user fatigue and guide users
                         through predetermined paths on the web, so it is suitable for providing clear aim.
-                        And it is possible to diminish user's memory load and increase recognition by maintaining a relatively consistent
+                        And it is possible to diminish user&#39;s memory load and increase recognition by maintaining a relatively consistent
                         heading configuration on the desktop and mobile (Nielsen, 10 Usability heuristics for user interface design, 2020).
                     </p>
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -214,7 +214,7 @@ const TheResponsiveDesignCaseStudy = () => {
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Websites consist of various components, such as buttons, images, containers, and text, unless it is elementary.
                         The grid presented above only defines how the container inside works but does not tell how the rest of the elements work.
-                        It is necessary to alter each elements' value for completion of responsive.
+                        It is necessary to alter each elements&#39; value for completion of responsive.
                     </p>
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Font are selected a clean, low-decorations San-serif series that is readable at any resolution,
@@ -228,8 +228,8 @@ const TheResponsiveDesignCaseStudy = () => {
                     </p>
                     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Instead of navigation, a Hamburger icon will adopt at a resolution below the iPad to accommodate
-                        both the effects of using users' exploring with navigation on a large screen
-                        and maintaining space on a small screen, as in Adobe's case.
+                        both the effects of using users&#39; exploring with navigation on a large screen
+                        and maintaining space on a small screen, as in Adobe&#39;s case.
                     </p>
                 </div>
             </div><br />

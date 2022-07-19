@@ -300,7 +300,7 @@ const Skateholder = () => {
                         resulting in lower work efficiency and satisfaction.
                     </p>
                     <p> Accordingly, a feasibility study is conducted to define goals, requirements, and development options for designing and building responsive websites and to acquaint recommendation options. </p>
-                    <p> The website focuses on providing convenience to users by enabling straightforward navigation of Haukai Restaurant's menus,
+                    <p> The website focuses on providing convenience to users by enabling straightforward navigation of Haukai Restaurant menus,
                         supporting reservation functions and availability on any device.
                         For this reason, Haukai Restaurant can expect additional promotional effects due to the influx of new customers visiting the site as well as the effect of reducing human costs.
                     </p>
